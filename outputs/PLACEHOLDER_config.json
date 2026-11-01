@@ -1,0 +1,51 @@
+{
+  "PD_TARGET_PCT": 40.0,
+  "FU": 0.8,
+  "PRIMARY_MIC": 1.0,
+  "MIC_GRID": [
+    0.125,
+    0.25,
+    0.5,
+    1,
+    2,
+    4,
+    8
+  ],
+  "N_VIRTUAL": 1000,
+  "TEST_SIZE": 0.2,
+  "CV_FOLDS": 5,
+  "ALPHA": 0.05,
+  "N_BOOT": 2000,
+  "USE_PLACEHOLDER": true,
+  "TIME_STEP_H": 0.25,
+  "FEATURES": [
+    "time_h",
+    "dose_mg",
+    "tau_h",
+    "weight_kg",
+    "crcl_ml_min"
+  ],
+  "CONC_IS_UNBOUND": false,
+  "COVARIATES": [
+    "weight_kg",
+    "crcl_ml_min"
+  ],
+  "rf_best_params": {
+    "max_depth": 16,
+    "min_samples_leaf": 60
+  },
+  "regimens": {
+    "500 mg q8h": [
+      500.0,
+      8.0
+    ],
+    "1000 mg q8h": [
+      1000.0,
+      8.0
+    ],
+    "1000 mg q12h": [
+      1000.0,
+      12.0
+    ]
+  }
+}

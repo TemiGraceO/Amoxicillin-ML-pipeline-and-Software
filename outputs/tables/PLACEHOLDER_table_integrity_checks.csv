@@ -1,0 +1,9 @@
+,count
+missing_values,0
+"duplicate_rows (id, regimen, time)",0
+non_finite_concentrations,0
+negative_concentrations,0
+time_outside_0_to_tau,0
+weight_kg_outside_30_to_200,0
+crcl_ml_min_outside_5_to_250,0
+regimens_with_unbalanced_rows,0

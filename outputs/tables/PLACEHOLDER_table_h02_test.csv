@@ -1,0 +1,7 @@
+regimen,model,ref_yes_pred_no,ref_no_pred_yes,p_raw,p_holm,reject_H0_at_alpha
+500 mg q8h,Linear regression,1,26,4.172325134277344e-07,1.2516975402832031e-06,True
+500 mg q8h,Random forest,0,26,2.9802322387695312e-08,1.1920928955078125e-07,True
+1000 mg q8h,Linear regression,0,8,0.0078125,0.015625,True
+1000 mg q8h,Random forest,0,8,0.0078125,0.015625,True
+1000 mg q12h,Linear regression,0,79,3.308722450212111e-24,1.9852334701272664e-23,True
+1000 mg q12h,Random forest,10,63,1.5535957242568204e-10,7.767978621284102e-10,True

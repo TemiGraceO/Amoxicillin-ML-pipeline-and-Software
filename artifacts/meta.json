@@ -1,0 +1,36 @@
+{
+  "use_placeholder": true,
+  "out_prefix": "PLACEHOLDER_",
+  "features": [
+    "time_h",
+    "dose_mg",
+    "tau_h",
+    "weight_kg",
+    "crcl_ml_min"
+  ],
+  "target": "conc_ref_mg_L",
+  "fu": 0.8,
+  "pd_target_pct": 40.0,
+  "primary_mic": 1.0,
+  "mic_grid": [
+    0.125,
+    0.25,
+    0.5,
+    1.0,
+    2.0,
+    4.0,
+    8.0
+  ],
+  "time_step_h": 0.25,
+  "regimens": {
+    "500 mg q8h": [500.0, 8.0],
+    "1000 mg q8h": [1000.0, 8.0],
+    "1000 mg q12h": [1000.0, 12.0]
+  },
+  "train_weight_range": [40.0, 120.0],
+  "train_crcl_range": [30.0, 180.0],
+  "rf_best_params": {
+    "max_depth": 16,
+    "min_samples_leaf": 30
+  }
+}

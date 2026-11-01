@@ -1,0 +1,10 @@
+params,mean_test_score,std_test_score
+"{'max_depth': 10, 'min_samples_leaf': 30}",-2.178948245123649,0.1048266657169174
+"{'max_depth': 10, 'min_samples_leaf': 60}",-2.171545767234704,0.09835314467244012
+"{'max_depth': 10, 'min_samples_leaf': 120}",-2.1994725934958317,0.10076983694756292
+"{'max_depth': 16, 'min_samples_leaf': 30}",-2.178626021821666,0.09941597173413406
+"{'max_depth': 16, 'min_samples_leaf': 60}",-2.1677671191377135,0.09351952351283385
+"{'max_depth': 16, 'min_samples_leaf': 120}",-2.1992466848877363,0.10009414927258681
+"{'max_depth': None, 'min_samples_leaf': 30}",-2.178618248767278,0.099388155250617
+"{'max_depth': None, 'min_samples_leaf': 60}",-2.1677673148167194,0.09351928228355035
+"{'max_depth': None, 'min_samples_leaf': 120}",-2.1992466848877363,0.10009414927258681
