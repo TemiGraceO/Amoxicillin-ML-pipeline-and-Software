@@ -1,0 +1,24 @@
+{
+  "ID_COL": "IndividualId",
+  "TIME_COL": "Time [min]",
+  "CONC_COL": "Organism|PeripheralVenousBlood|Amoxicillin|Plasma (Peripheral Venous Blood) [\u00b5mol/l]",
+  "PATIENT_FEATURES": [
+    "Organism|Age [year(s)]",
+    "Organism|Weight [kg]",
+    "Organism|Height [dm]",
+    "Organism|Kidney|GFRmat [l/min]",
+    "Gender"
+  ],
+  "TIME_UNIT": "minutes",
+  "CONC_UNIT": "umol/L",
+  "EXPECTED_RANGES": {
+    "age": [
+      25,
+      44
+    ],
+    "weight": [
+      51,
+      86
+    ]
+  }
+}

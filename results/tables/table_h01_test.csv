@@ -1,0 +1,2 @@
+test,n_individuals,median_MAE_linear,median_MAE_rf,p_value,reject_H0_at_alpha,RMSE_difference_linear_minus_rf,bootstrap_95CI_low,bootstrap_95CI_high
+Wilcoxon signed-rank on per-individual MAE (linear vs random forest),200,5.22512476094579,0.7245924765686276,1.4361464127613523e-34,True,6.68405059607386,6.434840683694584,6.918114696563514

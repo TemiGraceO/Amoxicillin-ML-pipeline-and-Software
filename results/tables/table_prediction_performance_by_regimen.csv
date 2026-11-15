@@ -1,0 +1,7 @@
+MAE,RMSE,R2,Bias (pred - ref),Negative predictions,regimen,model
+6.0194,8.9998,-0.0092,1.1687,0,1000mg_q12h,Linear regression
+0.9601,1.8394,0.9578,0.1206,0,1000mg_q12h,Random forest
+6.4519,10.5371,-0.007,-1.078,0,1000mg_q8h,Linear regression
+1.3717,2.3889,0.9482,-0.0173,0,1000mg_q8h,Random forest
+3.4851,5.2483,0.0007,0.0274,0,500mg_q8h,Linear regression
+0.6935,1.1886,0.9487,0.0339,0,500mg_q8h,Random forest

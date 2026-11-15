@@ -1,0 +1,7 @@
+,count
+missing_values,0
+"duplicate_rows (id, regimen, time)",0
+non_finite_concentrations,0
+negative_concentrations,0
+time_outside_0_to_end,0
+regimens_with_unbalanced_rows,0

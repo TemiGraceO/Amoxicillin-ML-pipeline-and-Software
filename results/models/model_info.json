@@ -1,0 +1,22 @@
+{
+  "FEATURES": [
+    "time_h",
+    "time_after_dose_h",
+    "dose_number",
+    "dose_mg",
+    "tau_h",
+    "Organism|Age [year(s)]",
+    "Organism|Weight [kg]",
+    "Organism|Height [dm]",
+    "Organism|Kidney|GFRmat [l/min]",
+    "Gender"
+  ],
+  "rf_best_params": {
+    "max_depth": 10,
+    "min_samples_leaf": 120
+  },
+  "cv_rmse": {
+    "Linear regression": 6.9682,
+    "Random forest": 1.7821
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "PD_TARGET_PCT": 40.0,
+  "PRIMARY_MIC": 1.0,
+  "MIC_GRID": [
+    0.125,
+    0.25,
+    0.5,
+    1,
+    2,
+    4,
+    8
+  ],
+  "CONCENTRATION_TYPE": "total",
+  "FRACTION_UNBOUND": 0.82,
+  "END_H": 72.0,
+  "GRID_STEP_H": 0.25,
+  "N_INDIVIDUALS": 1000,
+  "TEST_FRACTION": 0.2,
+  "CV_FOLDS": 3,
+  "ALPHA": 0.05,
+  "N_BOOT": 2000,
+  "FILES": {
+    "500mg_q8h": {
+      "patients": "500mg_q8h_patients.csv",
+      "results": "500mg_q8h_results.csv",
+      "dose_mg": 500.0,
+      "tau_h": 8.0
+    },
+    "1000mg_q8h": {
+      "patients": "1000mg_q8h_patients.csv",
+      "results": "1000mg_q8h_results.csv",
+      "dose_mg": 1000.0,
+      "tau_h": 8.0
+    },
+    "1000mg_q12h": {
+      "patients": "1000mg_q12h_patients.csv",
+      "results": "1000mg_q12h_results.csv",
+      "dose_mg": 1000.0,
+      "tau_h": 12.0
+    }
+  },
+  "SEED": 42,
+  "FEATURES": [
+    "time_h",
+    "time_after_dose_h",
+    "dose_number",
+    "dose_mg",
+    "tau_h",
+    "Organism|Age [year(s)]",
+    "Organism|Weight [kg]",
+    "Organism|Height [dm]",
+    "Organism|Kidney|GFRmat [l/min]",
+    "Gender"
+  ],
+  "rf_best_params": {
+    "max_depth": 10,
+    "min_samples_leaf": 120
+  },
+  "cv_rmse": {
+    "Linear regression": 6.9682,
+    "Random forest": 1.7821
+  }
+}
