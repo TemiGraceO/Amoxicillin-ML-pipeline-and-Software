@@ -12,13 +12,32 @@ import joblib
 import numpy as np
 import pandas as pd
 
-BASE = os.environ.get("AMX_RESULTS", "results")          # folder with the unzipped results bundle
-DB_FILE = os.environ.get("AMX_DB", "patients.json")      # patient records are saved here
+HERE = os.path.dirname(os.path.abspath(__file__))
+DB_FILE = os.environ.get("AMX_DB", os.path.join(HERE, "patients.json"))   # patient records are saved here
 HR = timedelta(hours=1)
 
 
+def find_base():
+    """Find the folder that holds settings_used.json (the unzipped results bundle)."""
+    cands = [os.environ.get("AMX_RESULTS")]
+    cands += [os.path.join(HERE, n) for n in ("results", "results_bundle", "Results", os.path.join("results", "results"))]
+    cands += [HERE, os.getcwd()]
+    for c in cands:
+        if c and os.path.exists(os.path.join(c, "settings_used.json")):
+            return c
+    for root, dirs, files in os.walk(HERE):          # look up to three levels down
+        if "settings_used.json" in files:
+            return root
+        if root[len(HERE):].count(os.sep) >= 3:
+            dirs[:] = []
+    return None
+
+
+BASE = find_base()
+
+
 def P(*parts):
-    return os.path.join(BASE, *parts)
+    return os.path.join(BASE or "results", *parts)
 
 
 def pct_above(conc, step, mic):

@@ -15,7 +15,18 @@ import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
 
-from engine import Engine, P, load_db, new_patient, pct_above, save_db
+from engine import BASE, HERE, Engine, P, load_db, new_patient, pct_above, save_db
+
+if BASE is None:
+    st.set_page_config(page_title="Amoxicillin Stewardship Monitor", page_icon="💊")
+    st.error("The results folder was not found.")
+    st.write(f"The app looked for `settings_used.json` inside `{HERE}` and its sub folders. "
+             "Put the unzipped results bundle in a folder named `results` next to `app.py`, "
+             "commit it to your Git repository, and redeploy.")
+    st.write("Files needed inside `results`: `settings_used.json`, `models/random_forest.joblib`, "
+             "`models/linear_regression.joblib`, `models/model_info.json`, `data/dataset_info.json`, "
+             "`data/test_predictions.csv.gz`, the `tables` folder and the `figures` folder.")
+    st.stop()
 
 st.set_page_config(page_title="Amoxicillin Stewardship Monitor", page_icon="💊", layout="wide")
 
